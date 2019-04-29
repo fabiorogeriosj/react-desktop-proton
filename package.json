@@ -1,0 +1,32 @@
+{
+  "name": "demoDesktop",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/.bin/babel-node index.js",
+    "build": "node_modules/.bin/babel index.js -d bin/",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "libui-node": "^0.2.1",
+    "proton-native": "latest"
+  },
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-stage-0": "latest",
+    "electron-builder": "latest"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "build": {
+    "protonNodeVersion": "current",
+    "mac": {
+      "identity": null
+    }
+  }
+}

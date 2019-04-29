@@ -1,0 +1,12 @@
+{
+  "name": "demoDesktop",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "libui-node": "^0.2.1",
+    "proton-native": "latest"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
